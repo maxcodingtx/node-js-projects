@@ -15,7 +15,7 @@ app.post("/generate", async (req, res) => {
     // Get text from request body
     const { text } = req.body;
 
-    // Check if text is falsy
+    // Check if text is provided. If not, send an error message.
     if (!text) {
         res.status(400).send("text is required");
     }
