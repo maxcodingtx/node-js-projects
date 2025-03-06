@@ -21,6 +21,10 @@ async function generateQRCode() {
         const qrCodeImage = document.getElementById("qrImage");
         qrCodeImage.src = data.qrCodeDateURL;
         qrCodeImage.style.display = "block";
+        // Display success message 100 milliseconds after QR code is generated.
+        setTimeout(() => {
+            alert("QR Code generated successfully!");
+        }, 100);
     } else {
         // If the response is not OK, alert the user.
         alert("Error generating QR Code");
