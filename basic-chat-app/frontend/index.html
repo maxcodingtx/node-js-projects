@@ -7,10 +7,14 @@
         <link rel="stylesheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-            rel="stylesheet"
-        />
+        <script src="/socket.io/socket.io.js"></script>
     </head>
-    <body></body>
+    <body>
+        <h2>Simple Chat</h2>
+        <div id="chatBox"></div>
+        <input type="text" id="userMessage" placeholder="Type a message..." />
+        <button id="sendMessage">Send</button>
+
+        <script src="app.js"></script>
+    </body>
 </html>
