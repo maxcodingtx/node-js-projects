@@ -12,9 +12,6 @@ app.use(express.static("frontend"));
 io.on("connection", socket => {
     console.log("A user connected");
 
-    socket.on("set username", username => {
-        socket.username = username;
-    });
     socket.on("chat message", msg => {
         io.emit("chat message", msg);
     });
