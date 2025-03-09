@@ -1,0 +1,62 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+#userName,
+#userMessage,
+#sendMessage {
+    margin: 5px auto;
+    display: block;
+}
+
+#userName,
+#userMessage {
+    padding: 12px;
+
+    font-size: 24px;
+}
+
+#sendMessage {
+    padding: 16px 24px;
+
+    background-color: white;
+
+    font-size: 24px;
+}
+
+#sendMessage:hover {
+    background-color: #f1f1f1;
+}
+
+#chatBox {
+    margin: auto auto;
+    padding: 24px;
+    width: 80%;
+
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+
+    background-color: #f9f9f9;
+}
+
+#chatBox .message {
+    margin: 16px auto;
+    padding: 12px;
+    width: 80%;
+
+    border-radius: 8px;
+    border: 2px solid #f9f9f9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    background-color: white;
+
+    font-size: 24px;
+}
+
+#chatBox h1 {
+    font-size: 32px;
+}
