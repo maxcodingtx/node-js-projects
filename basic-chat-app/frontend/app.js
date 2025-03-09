@@ -21,6 +21,7 @@ sendBtn.addEventListener("click", () => {
 socket.on("chat message", msg => {
     const messageElement = document.createElement("p");
     messageElement.textContent = msg;
+    messageElement.className = "message";
     chatBox.appendChild(messageElement);
     chatBox.scrollTop = chatBox.scrollHeight;
 });
@@ -28,4 +29,7 @@ socket.on("chat message", msg => {
 // lock user input field once the user has entered the username
 userNameInput.addEventListener("change", () => {
     userNameInput.disabled = true;
+    setTimeout(() => {
+        alert("Username is set");
+    }, 100);
 });
