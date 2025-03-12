@@ -22,6 +22,7 @@ document
             const responseData = await response.json();
             // Log the server's json-parsed response
             console.log(responseData);
+            alert("Data Successfully Logged!");
         } catch (error) {
             // handling errors
             console.error("Error while submitting form:", error);
